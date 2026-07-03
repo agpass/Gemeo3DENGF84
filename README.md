@@ -2,11 +2,12 @@
 
 ENGF84 · Modelagem e Otimização de Sistemas de Produção · UFBA 2026.1 · Grupo 6 · Etapa 3
 
-Visualização 3D do modelo de filas do supermercado, em **projeto separado** do simulador
-([agpass/SupermercadoENGF84](https://github.com/agpass/SupermercadoENGF84)). Não altera o
+Visualização 3D do modelo de filas do supermercado, compatível com Simulador de Filas ([agpass/SupermercadoENGF84](https://github.com/agpass/SupermercadoENGF84)). Não altera o
 original: lê o motor publicado, roda a simulação e mostra o resultado.
 
-## O que a página faz
+## Como rodar o programa
+
+Abra uma cópia de `index.html`.
 
 Ao abrir, aparece uma **tela de upload**. Você carrega uma planilha compatível com o simulador
 (`.csv` ou `.xlsx`) — ou usa o botão de dados de exemplo. Então o gêmeo:
@@ -66,13 +67,3 @@ Cores: azul = coletando · âmbar = na fila · verde = em atendimento · vermelh
 
 Navegação: **órbita** (arrastar gira, roda dá zoom, botão direito move o alvo) e **modo andar** em
 primeira pessoa (WASD/setas + mouse; Esc sai).
-
-## Publicar
-
-1. Crie um repositório novo, **público** (ex.: `gemeo3d-supermercado`);
-2. Suba `index.html` e `README.md` na raiz;
-3. **Settings → Pages → Deploy from a branch → main / (root)**;
-4. Em ~1 min: `https://SEU-USUARIO.github.io/gemeo3d-supermercado/`.
-
-Precisa de internet para puxar o motor do repositório do simulador. Se o CSV do simulador estiver
-inacessível ao usar "dados de exemplo", o gerador do próprio motor é usado como fallback.
